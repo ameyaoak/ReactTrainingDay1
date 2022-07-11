@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // MIME types
+
+    function displayInfo(args){
+        var output = "";
+        if(typeof args.name == "string"){
+            output += "Name : " + args.name + "\n";
+        }
+
+        if(typeof args.age == "number"){
+            output += "Age : "+ args.age + "\n";
+        }
+
+        alert(output);
+    }
+    // var person = {
+    // "name":"Name",
+    // "city":"Blr";
+    // }
+
+   displayInfo({
+       "name":"Name",
+       "age":10
+   })
+
+   displayInfo({
+       name:"Name",
+       age:30
+   })
+    
+    </script>
+</body>
+</html>
